@@ -1,0 +1,141 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .instrument-serif-regular {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 120px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: -1px;
+            z-index: 10;
+            color: #ffffff;
+            font-family: "Instrument Serif", serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .text-block {
+            position: absolute;
+            width: 520px;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: left;
+            color: #e8e8e8;
+        }
+
+        .text-block-1 {
+            top: 150px;
+            left: 140px;
+        }
+
+        .text-block-2 {
+            top: 380px;
+            left: 20px;
+        }
+
+        .text-block-3 {
+            top: 620px;
+            left: 60px;
+        }
+
+        .figures-container {
+            position: absolute;
+            right: 100px;
+            top: 120px;
+            width: 700px;
+            height: 650px;
+        }
+
+        .figure {
+            position: absolute;
+            width: 320px;
+            height: 650px;
+            object-fit: contain;
+            background: transparent;
+        }
+
+        .figure-1 {
+            left: 0;
+            top: 80px;
+            z-index: 1;
+        }
+
+        .figure-2 {
+            left: 160px;
+            top: 0;
+            z-index: 2;
+        }
+
+        .figure-3 {
+            left: 320px;
+            top: 80px;
+            z-index: 3;
+        }
+
+        .white-block {
+            position: absolute;
+            bottom: 50px;
+            right: 80px;
+            width: 470px;
+            height: 240px;
+            background-color: #ffffff;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .white-block iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 1400px) {
+            .text-block {
+                width: 450px;
+                font-size: 12px;
+            }
+
+            .figures-container {
+                right: 50px;
+                width: 600px;
+            }
+
+            .figure {
+                width: 280px;
+            }
+
+            .figure-2 {
+                left: 140px;
+            }
+
+            .figure-3 {
+                left: 280px;
+            }
+        }
